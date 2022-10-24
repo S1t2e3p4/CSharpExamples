@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+// Например:
+// 456->6
+// 782->2
+// 918->8
+
+ Console.WriteLine("Введите трёхзначное число: ");
+        int number = int.Parse(Console.ReadLine());
+        if ((number>99&&number<1000)||(number<-99&&number>-1000))
+        {
+            int lastNumber=number%10;
+            if (lastNumber<0)
+            {
+                lastNumber=lastNumber*-1;
+            }
+            Console.WriteLine(lastNumber);
+            }
+        else
+        {
+          Console.WriteLine ("Ошибка! Введено некорректное значение");
+        }
