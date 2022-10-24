@@ -8,7 +8,7 @@
         // 4 -> 16
         // -3 -> 9
         // -7 -> 49
-        Console.Write("Введите число: ");
+        Console.WriteLine ("Введите число: ");
         int number = int.Parse(Console.ReadLine());
         int sqr = number * number;
         Console.WriteLine(" Квадрат числа " + number + " равен = " + sqr);
